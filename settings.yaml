@@ -1,0 +1,39 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/settings
+
+
+title: Furkans Home
+
+background:
+  image: https://i.pinimg.com/originals/21/44/d0/2144d02e5d01b2260fe05c91e9d8ee43.jpg
+  blur: sm # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
+  saturate: 75 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
+  brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
+  opacity: 50 # 0-100
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+layout:
+  RASPBERRYPI Performances:
+    icon: prtg
+    style: row
+    columns: 6
+  FURKANS-KALI Performances:
+    icon: prtg
+    style: row
+    columns: 6
+  Docker:
+    icon: docker
+    style: row
+    columns: 3
+  Calendar:
+    icon: https://icons.veryicon.com/png/o/miscellaneous/face-monochrome-icon/calendar-249.png
+    style: column
+    columns: 1
+  Services:
+     icon: https://i.imgur.com/TtVFV38.png
+     style: column
+     columns: 2

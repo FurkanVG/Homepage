@@ -1,0 +1,14 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/docker/
+
+localhost:
+  host: dockerproxy
+  port: 2375
+
+docker-kali:
+  host: 192.168.178.88
+  port: 2375
+
+# my-docker:
+#  socket: /var/run/docker.sock

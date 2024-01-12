@@ -1,0 +1,27 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/bookmarks
+
+- Developer:
+    - Github:
+        - icon: github.png
+          href: https://github.com
+    - ChatGPT:
+        - icon: chatgpt
+          href: https://chat.openai.com/
+
+- Social:
+    - X:
+        - icon: x
+          href: https://x.com
+    - Reddit:
+        - icon: reddit
+          href: https://reddit.com
+
+- Entertainment:
+    - YouTube:
+        - icon: youtube
+          href: https://youtube.com
+    - Twitch:
+        - icon: twitch
+          href: https://twitch.tv

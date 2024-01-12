@@ -1,0 +1,171 @@
+### Main Config for Services ###
+- RASPBERRYPI Performances:
+    - CPU Usage:
+        widget:
+         type: glances
+         url: http://192.168.178.3:61208/
+         metric: cpu
+    - Memory Usage:
+        style: row
+        widget:
+         type: glances
+         url: http://192.168.178.3:61208/
+         metric: memory
+    - Temperature:
+        widget:
+         type: glances
+         url: http://192.168.178.3:61208/
+         metric: sensor:cpu_thermal 0
+    - Disk Usage:
+        widget:
+         type: glances
+         url: http://192.168.178.3:61208/
+         metric: disk:sda
+    - Network Usage:
+        widget:
+         type: glances
+         url: http://192.168.178.3:61208/
+         metric: network:eth0
+    - Network Usage:
+        widget:
+         type: glances
+         url: http://192.168.178.3:61208/
+         metric: network:lo
+
+- FURKANS-KALI Performances:
+    - CPU Usage:
+        widget:
+         type: glances
+         url: http://192.168.178.88:61208/
+         metric: cpu
+    - Memory Usage:
+        style: row
+        widget:
+         type: glances
+         url: http://192.168.178.88:61208/
+         metric: memory
+    - Temperature:
+        widget:
+         type: glances
+         url: http://192.168.178.88:61208/
+         metric: sensor:Package id 0
+    - Disk Usage:
+        widget:
+         type: glances
+         url: http://192.168.178.88:61208/
+         metric: disk:nvme0n1p4
+    - Network Usage:
+        widget:
+         type: glances
+         url: http://192.168.178.88:61208/
+         metric: network:eth0
+    - Network Usage:
+        widget:
+         type: glances
+         url: http://192.168.178.88:61208/
+         metric: network:lo
+
+- Calendar:
+    - Calendar:
+        widget:
+         type: calendar
+         firstDayInWeek: monday # optional - defaults to monday
+         view: monthly # optional - possible values monthly, agenda
+         maxEvents: 10 # optional - defaults to 10
+
+- Docker:
+    - Portainer:
+        icon: portainer
+        href: https://portainer.furrkan.de
+        ping: https://portainer.furrkan.de
+        server: localhost
+        container: portainer
+        widget:
+          type: portainer
+          url: https://portainer.furrkan.de
+          env: 2
+          key: ptr_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    - Pi-Hole:
+        icon: pi-hole
+        href: https://pihole.furrkan.de
+        ping: https://pihole.furrkan.de
+        server: localhost
+        container: pihole
+        widget:
+         type: pihole
+         url: http://192.168.178.3:1010
+         key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    - Uptime-Kuma:
+        icon: uptime-kuma
+        href: https://kuma.furrkan.de
+        ping: https://kuma.furrkan.de
+        server: localhost
+        container: uptime-kuma
+        widget:
+         type: uptimekuma
+         url: https://kuma.furrkan.de
+         slug: main
+    - Watchtower:
+        icon: watchtower
+        ping: https://192.168.178.3:8081
+        server: localhost
+        container: watchtower
+        widget:
+         type: watchtower
+         url: http://192.168.178.3:8081
+         key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    - Change-Detection:
+        icon: https://uxwing.com/wp-content/themes/uxwing/download/tools-equipment-construction/binoculars-icon.png
+        href: https://change.furrkan.de
+        ping: https://change.furrkan.de
+        server: localhost
+        container: changedetection
+        widget:
+         type: changedetectionio
+         url: https://change.furrkan.de
+         key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    - Fireshare:
+        icon: fireshare
+        href: http://fireshare.furrkan.de
+        ping: http://fireshare.furrkan.de
+        server: docker-kali
+        container: dockerproxy
+        showStats: true
+    - Bitwarden:
+        icon: bitwarden
+        href: https://bitwarden.furrkan.de
+        ping: https://bitwarden.furrkan.de
+        server: localhost
+        container: bitwarden
+        showStats: true
+    - Matomo:
+        icon: matomo
+        href: https://matomo.furrkan.de
+        ping: https://matomo.furrkan.de
+        server: localhost
+        container: matomo
+        showStats: true
+    - Glances:
+        icon: glances
+        href: http://192.168.178.3:61208/
+        ping: http://192.168.178.3:61208/
+        server: localhost
+        container: glances
+        showStats: true
+
+- Services:
+    - Cloudflare:
+        icon: cloudflare
+        href: https://dash.cloudflare.com
+        ping: https://dash.cloudflare.com
+    - FRITZ!Box:
+       widget:
+        type: fritzbox
+        url: http://192.168.178.1
+       icon: https://XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+       href: https://XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+       ping: https://XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    - Google:
+        icon: google
+        href: https://google.com
+        ping: https://google.com

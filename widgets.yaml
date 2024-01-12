@@ -1,0 +1,53 @@
+### Main Config for Widgets ###
+- logo:
+    icon: https://furrkan.de/Other-Pictures/Fenerbahce-Logo.png
+
+- resources:
+    label: CPU
+    expanded: false
+    cpu: true
+
+- resources:
+    label: Memory
+    expanded: false
+    memory: true
+
+- resources:
+    label: Storage
+    expanded: false
+    disk: /
+
+- glances:
+    url: http://192.168.178.3:61208/
+    cpu: false
+    mem: false
+    cputemp: false
+    uptime: true
+    expanded: true # show the expanded view
+    label: Uptime # optional
+
+- glances:
+    url: http://192.168.178.88:61208/
+    cpu: true
+    mem: false
+    disk: /
+    expanded: true
+    label: KALI
+
+- search:
+    provider: google
+    target: _blank
+
+- openmeteo:
+    label: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX # optional
+    latitude: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    longitude: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    timezone: Europe/Berlin # optional
+    units: metric # or imperial
+    cache: 5 # Time in minutes to cache API responses, to stay within limits
+
+- datetime:
+    text_size: xl
+    format:
+     timeStyle: short
+     hourCycle: h23
